@@ -1,4 +1,4 @@
--- Disable SQL strict mode before importing table to allow nulls
+-- Disable SQL strict mode before importing table to allow blanks
 SET GLOBAL sql_mode = 'NO_ENGINE_SUBSTITUTION';
 -- DATA CLEANING
 -- View the table
