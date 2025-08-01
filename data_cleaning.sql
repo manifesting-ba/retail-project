@@ -1,4 +1,4 @@
--- Disable SQL strict mode before importing table to allow blanks
+-- Disable SQL strict mode before importing the dataset
 SET GLOBAL sql_mode = 'NO_ENGINE_SUBSTITUTION';
 -- DATA CLEANING
 -- View the table
@@ -16,7 +16,7 @@ FROM retail_store_sales;
 SELECT *
 FROM retail_store_sales_cleaned_v1;
 
--- Standardize the data
+-- 1. Standardize the data
 -- Rename columns
 ALTER TABLE retail_store_sales_cleaned_v1
 RENAME COLUMN `Transaction ID` to Transaction_id;
@@ -82,13 +82,13 @@ FROM retail_store_sales_cleaned_v1;
 ALTER TABLE retail_store_sales_cleaned_v1
 MODIFY COLUMN Transaction_date DATE;
 
--- Look for duplicates
+-- 2. Remove duplicates
 SELECT *, ROW_NUMBER() OVER(PARTITION BY Transaction_id, Customer_id, Category, Item, Price_per_unit, Quantity, Total_spent, Payment_method, Location, Transaction_date, Discount_applied) AS row_num
 FROM retail_store_sales_cleaned_v1
 ORDER BY row_num DESC;
--- there's no row_num > 1 which means there's no duplicates
+-- there's no duplicates
 
--- Handle missing values
+-- 3. Handle missing values
 -- Price per unit column
 UPDATE retail_store_sales_cleaned_v1
 SET Price_per_unit = Total_spent/Quantity;
@@ -99,11 +99,11 @@ WHERE Price_per_unit IS NULL; -- both quantity and total spent are missing - may
 -- Quantity column
 SELECT *
 FROM retail_store_sales_cleaned_v1
-WHERE Quantity = 0 AND Price_per_unit IS NOT NULL; -- no new rows found besides the rows above
+WHERE Quantity = 0 AND Price_per_unit IS NOT NULL; 
 -- Total spent column
 SELECT *
 FROM retail_store_sales_cleaned_v1
-WHERE Total_spent = 0 AND Price_per_unit IS NOT NULL; -- no new rows found
+WHERE Total_spent = 0 AND Price_per_unit IS NOT NULL; 
 -- Delete price per unit rows that can't be retrieved
 DELETE FROM retail_store_sales_cleaned_v1
 WHERE Price_per_unit IS NULL AND Quantity = 0 AND Total_spent = 0; 
@@ -125,6 +125,7 @@ WHERE (t1.Item = '') AND t2.Item != '';
 SELECT DISTINCT Item
 FROM retail_store_sales_cleaned_v1;
 
+-- Review the cleaned table
 SELECT *
 FROM retail_store_sales_cleaned_v1;
 
