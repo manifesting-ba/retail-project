@@ -36,3 +36,19 @@ The SQL queries used for exploratory data analysis are available at
 - **Insight**: The data reveals a slight dip in 2023 followed by a **clear rebound** in 2024. Sales, transactions, and quantity sold all increased, suggesting a **potential recovery phase** — possibly due to post-pandemic normalization or improved consumer demand. However, additional context is needed to confirm causality.
 
 <img width="1290" height="603" alt="Spending and Transaction Patterns over time (2)" src="https://github.com/user-attachments/assets/5566c9b7-7c75-4e1d-8f60-92a628c85590" />
+
+- **Observations**:
+  - **Clear Seasonality**: Spending and transactions exhibit clear seasonal trends, with noticeable **peaks in late Q4** (Nov-Dec) and **around mid-year** — likely aligned with holiday shopping and summer events.
+  - **Post-peak Declines**: A **sharp drop follows each peak season**, especially at the **start of the year** (Jan-Feb), indicating a slowdown in consumer activity.
+- **Recommendations**:
+  - **Capitalize on Peak Seasons**:
+    - Launch **major promotions, product launches**, and **marketing campaigns** in late Q4 and summer months.
+    - **Scale up inventory** ahead of seasonal peaks to meet demand.
+    - **Increase staffing, bolster customer support**, and scale up **logistics operations** during high-demand periods to maintain service quality.
+  - **Counteract Post-Holiday Declines**:
+    - Deploy **loyalty perks** or **"new year" sales** in January–February to sustain revenue.
+    - **Adjust supply levels** in off-seasons to minimize holding costs and unsold stock.
+
+### Category Performance Analysis:
+
+<img width="1287" height="626" alt="Total spent by Product Category" src="https://github.com/user-attachments/assets/3bc9ef80-4a04-4b37-a8b0-24aa1c03761d" />
