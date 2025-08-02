@@ -27,4 +27,12 @@ The total row count after cleaning is 11,971 rows
 The SQL queries used for exploratory data analysis are available at
 ### ⌛ Time series analysis
 
-<img width="1289" height="603" alt="Spending and Transaction Patterns over time (1)" src="https://github.com/user-attachments/assets/79212d95-0488-4301-8a2f-1768eecc60e0" />
+<img width="987" height="180" alt="Feuille 15" src="https://github.com/user-attachments/assets/7c5f8bcb-9289-41bd-8b73-c84b3875d24e" />
+
+- **Observations**:
+  - **Sales Recovery**: After a slight dip in 2023, total sales bounced back in 2024, reaching $524,881, increasing by 6.8% from 2023 to 2024.
+  - **Rising Customer Activity**: Transactions and quantity sold also peaked in 2024, signaling enhanced customer engagement.
+  - **Stable Customer Spend**: Average spend per transaction remained stable, hovering around $130 — this suggests growth came from increased volume and purchase frequency.
+- **Insight**: The data reveals a slight dip in 2023 followed by a **clear rebound** in 2024. Sales, transactions, and quantity sold all increased, suggesting a **potential recovery phase** — possibly due to post-pandemic normalization or improved consumer demand. However, additional context is needed to confirm causality.
+
+<img width="1290" height="603" alt="Spending and Transaction Patterns over time (2)" src="https://github.com/user-attachments/assets/5566c9b7-7c75-4e1d-8f60-92a628c85590" />
