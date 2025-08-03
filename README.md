@@ -50,26 +50,29 @@ The SQL queries used for exploratory data analysis are available at
     - Deploy **loyalty perks** or **"new year" sales** in January–February to sustain revenue.
     - **Adjust supply levels** in off-seasons to minimize holding costs and unsold stock.
 
-### Category Performance Analysis:
+### 🗃 Category Performance Analysis:
 
 <img width="1287" height="626" alt="Total spent by Product Category" src="https://github.com/user-attachments/assets/3bc9ef80-4a04-4b37-a8b0-24aa1c03761d" />
+
 <img width="1287" height="626" alt="Total quantity by category" src="https://github.com/user-attachments/assets/a2a53463-c775-4156-bdba-8284cad924e4" />
 
 ✒ **Observations**:
 - **Butchers** and **Electric Household Essentials** stand out as **value-driven high performers**, excelling in **sales, transactions, and average spend**.
-- **Furniture** shows high sales, transactions, and quantity sold with moderate average spend, suggesting it is a **volume-driven** category.
+- **Furniture** exhibits solid sales with high transactions, quantity sold and moderate average spend, suggesting it is a **volume-driven** category.
 - **Food** and **Beverages** also show **high total quantities** and solid sales, suggesting they are **staple categories with steady performance**.
 - **Patisserie** underperforms across most key metrics (sales, transactions, quantity) despite medium average spend, indicating a need for **pricing or promotional review**.
 - **Milk Products** has relatively **high total quantity and transaction volume** but **lowest average spend** ($119.00), suggesting it's a **frequently purchased, low-margin staple**.
 
 💡**Recommendations**:
 - **Invest in High-performing categories** (Butchers and Electric Essentials):
-  - Focus promotions and advertising on these categories to maintain momentum and further boost sales
-  - Introduce higher-end products to these categories to serve evolving customer needs and capture greater value
+  - Focus promotions and advertising on these categories to maintain momentum and further boost sales.
+  - Introduce premium product lines to serve evolving customer needs and capture greater value.
 - **Boost Volume-Driven Sales with Bundles and Bulk Incentives** (Furniture and Food):
-  - Offer bulk purchase discounts or bundled promotions to encourage larger purchases, improve inventory turnover, and drive profitability on frequently purchased items
-  - Eg: Offer package deals (e.g., table + chairs, bed frame + mattress) to increase transaction size.
+  - Offer bulk discounts or bundled deals to encourage larger purchases, improve inventory turnover, and drive profitability on frequently purchased items.
+  - Example: Bundle a sofa with a coffee table, or offer family meal deals including bulk food items.
 - **Reassess Pricing for Underperforming category** (Patisserie):
-  - Consider new marketing campaigns, pricing adjustments, or bundling with related products to enhance competitiveness and performance
+  - Consider new marketing campaigns, pricing adjustments, or bundling with related products to enhance competitiveness and performance.
 - **Bundle Low-profit category** (Milk):
-  - Pair milk products with complementary goods such as cereals or cookies to increase basket size and profitability.
+  - Pair milk products with complementary goods such as cereals, cookies, or oats to encourage bundled purchases and lift average transaction values.
+
+### 📱 Channel Analysis:
