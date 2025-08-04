@@ -1,6 +1,24 @@
 # RETAIL SALES ANALYSIS PROJECT
 ## 🎯 Objective
 The objective of this project is to explore sales trends, assess product category performance, and understand customer purchasing behavior. The insights derived from this analysis aim to support data-driven decision-making for marketing strategies and inventory management.
+## 📊 Executive Summary
+#### ✒ Key Observations:
+- **Seasonal Trends**: Peaks in **mid-year** and **Q4**; sharp **drops post-holiday** season.
+- **Category Performance**:
+  - **Butchers**, **Electric Household Essentials**, and **Furniture** are **high performers** in all metrics.
+  - **Patisserie** underperforms.
+  - **Milk Products** have high volume and transactions but lowest sales.
+- **Channel Preferences**:
+  - Online and offline usage is balanced overall, with category-specific variations.
+  - However, customers slightly lean towards online channels.
+- **Positive correlation** between number of transactions and customer spending.
+
+#### 💡 Recommendations Preview:
+- **Leverage seasonal peaks** with targeted promotions.
+- **Prioritize investment** in **top-performing** categories and products.
+- Consider **re-pricing** or **bundling low-performing** categories.
+- Encourage **more frequent purchases** through loyalty programs, rewards, or personalized offers to increase revenue.
+
 ## 📁 Dataset Overview
 - **Source**: [Kaggle - Retail sales dataset](retail_store_sales.csv)
 - **License**: CC BY-SA 4.0 License
@@ -60,7 +78,7 @@ The SQL queries used for exploratory data analysis are available at
 ✒ **Observations**:
 - **Butchers** and **Electric Household Essentials** stand out as **value-driven high performers**, excelling in **sales, transactions, and average spend**.
 - **Furniture** exhibits solid sales with high transactions, quantity sold and moderate average spend, suggesting it is a **volume-driven** category.
-- **Food** and **Beverages** also show **high total quantities** and solid sales, suggesting they are **staple categories with steady performance**.
+- **Food** and **Beverages** also show **high total quantities** and solid sales, suggesting they are **staple categories with decent performance**.
 - **Patisserie** underperforms across most key metrics (sales, transactions, quantity) despite medium average spend, indicating a need for **pricing or promotional review**.
 - **Milk Products** has relatively **high total quantity and transaction volume** but **lowest average spend** ($119.00), suggesting it's a **frequently purchased, low-margin staple**.
 
@@ -71,10 +89,16 @@ The SQL queries used for exploratory data analysis are available at
 - **Boost Volume-Driven Sales with Bundles and Bulk Incentives** (Furniture and Food):
   - Offer bulk discounts or bundled deals to encourage larger purchases, improve inventory turnover, and drive profitability on frequently purchased items.
   - Example: Bundle a sofa with a coffee table, or offer family meal deals including bulk food items.
-- **Reassess Pricing for Underperforming category** (Patisserie):
+- **Reassess Pricing & Promotions for Underperforming category** (Patisserie):
   - Consider new marketing campaigns, pricing adjustments, or bundling with related products to enhance competitiveness and performance.
 - **Bundle Low-profit category** (Milk):
   - Pair milk products with complementary goods such as cereals, cookies, or oats to encourage bundled purchases and lift average transaction values.
+
+<img width="1287" height="315" alt="Item Performance Breakdown_ High vs  Low Performers (1)" src="https://github.com/user-attachments/assets/b2dd917d-ace9-40de-a8b8-6b7da06233e1" />
+
+💡**Recommendations**:
+- **Sustain promotion** of these products.
+- **Deep-Dive into Profitability**: While these items lead in sales, analyze their profit margins to ensure they also contribute to net profit—not just revenue.
 
 ### 📱 Location Analysis:
 
@@ -83,7 +107,7 @@ The SQL queries used for exploratory data analysis are available at
 ✒ **Observations**:
 - **A Slight Preference for Online Shopping**: Online transactions (6,068) modestly exceed in-store (5,903).
 
-<img width="1263" height="669" alt="Online vs In-Store Transactions by Product Category (2)" src="https://github.com/user-attachments/assets/33dfce41-283e-485c-8313-58db73b01d21" />
+ <img width="1263" height="669" alt="Online vs In-Store Transactions by Product Category (2)" src="https://github.com/user-attachments/assets/33dfce41-283e-485c-8313-58db73b01d21" />
 
 ✒ **Observations**:
 - **Tech Categories Skew Heavily Online**: Computers & Electric Accessories and Electric Household Essentials show considerably higher transaction volumes online compared to in-store, indicating a **strong consumer preference for buying tech products digitally**. 
@@ -103,7 +127,7 @@ The SQL queries used for exploratory data analysis are available at
   - Offer flexible delivery, pickup options.
 - **Support Online Growth for Daily Essentials**:
   - Optimize logistics for fast, fresh delivery
- 
+  
 ### 👩Customer Behavior Analysis
 
 <img width="1314" height="603" alt="Correlation between Customer Spending and Number of Transactions" src="https://github.com/user-attachments/assets/c2cabbb3-bade-4331-9b55-82888c43c179" />
@@ -113,6 +137,5 @@ The SQL queries used for exploratory data analysis are available at
 - Most customers fall within a narrow transaction range (440–520 transactions), suggesting **consistent shopping behavior**.
 
 💡**Recommendations**:
-- **Encouraging repeat purchases** (e.g., via loyalty programs, rewards, or tailored offers) can drive revenue growth.
-- **Create VIP programs or exclusive benefits** to retain and expand customers near the top end of transaction volume (490–520).
-- 
+- **Encouraging more purchases** (e.g., via loyalty programs, rewards, or tailored offers) can drive revenue growth.
+
