@@ -76,13 +76,40 @@ The SQL queries used for exploratory data analysis are available at
 - **Bundle Low-profit category** (Milk):
   - Pair milk products with complementary goods such as cereals, cookies, or oats to encourage bundled purchases and lift average transaction values.
 
-### 📱 Channel Analysis:
+### 📱 Location Analysis:
 
-<img width="477" height="662" alt="Feuille 16" src="https://github.com/user-attachments/assets/711e74fa-e4c0-4ec1-a9eb-44ec2dae8bed" />
-<img width="1331" height="647" alt="Online vs In-Store Transactions by Product Category" src="https://github.com/user-attachments/assets/651fd56c-c7c7-4c90-a401-674e21b2009a" />
+<img width="494" height="662" alt="Feuille 16 (1)" src="https://github.com/user-attachments/assets/c33c233c-3e22-4d6f-bba0-b21e5015c9b6" />
 
 ✒ **Observations**:
-- 
+- **A Slight Preference for Online Shopping**: Online transactions (6,068) modestly exceed in-store (5,903).
+
+<img width="1263" height="669" alt="Online vs In-Store Transactions by Product Category (2)" src="https://github.com/user-attachments/assets/33dfce41-283e-485c-8313-58db73b01d21" />
+
+✒ **Observations**:
+- **Tech Categories Skew Heavily Online**: Computers & Electric Accessories and Electric Household Essentials show considerably higher transaction volumes online compared to in-store, indicating a **strong consumer preference for buying tech products digitally**. 
+- **Furniture Leads In-store Purchases**: This is likely due to customers preferring to see or test items physically.
+- **Balanced Channels for Food and Patisserie**: These categories show a relatively even split between online and offline, suggesting **flexibility** in customer buying behavior.
+- **Daily Essentials Lean Online**: Milk products, beverages, and butchers see slightly more tractions online.
 
 💡**Recommendations**:
-- **Invest in High-performi
+- **Enhance Online Strategy for Tech Categories**:
+  - Provide more detailed product content, fast delivery, and competitive pricing to optimize online shopping experience.
+  - Reduce in-store inventory footprint for these categories to lower overhead.
+- **Improve In-Store Experience for Furniture**:
+  - Invest in attractive store displays and trial zones
+  - Provide in-store-only services (eg: personalized consultation)
+- **Maintain Omnichannel Presence for Balanced Categories**:
+  - Ensure consistent pricing and promotions online and offline.
+  - Offer flexible delivery, pickup options.
+- **Support Online Growth for Daily Essentials**:
+  - Optimize logistics for fast, fresh delivery
+ 
+### 👩Customer Behavior Analysis
+
+<img width="1314" height="603" alt="Correlation between Customer Spending and Number of Transactions" src="https://github.com/user-attachments/assets/c2cabbb3-bade-4331-9b55-82888c43c179" />
+
+✒ **Observations**:
+- There is a clear **positive linear relationship** between the number of transactions and customer spending.
+- Most customers fall within a narrow transaction range (440–520 transactions), suggesting **consistent shopping behavior**.
+
+💡**Recommendations**:
