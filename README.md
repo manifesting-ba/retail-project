@@ -113,3 +113,6 @@ The SQL queries used for exploratory data analysis are available at
 - Most customers fall within a narrow transaction range (440–520 transactions), suggesting **consistent shopping behavior**.
 
 💡**Recommendations**:
+- **Encouraging repeat purchases** (e.g., via loyalty programs, rewards, or tailored offers) can drive revenue growth.
+- **Create VIP programs or exclusive benefits** to retain and expand customers near the top end of transaction volume (490–520).
+- 
