@@ -41,6 +41,7 @@ The SQL queries used for exploratory data analysis are available at
 ✒ **Observations**:
 - **Clear Seasonality**: Spending and transactions exhibit clear seasonal trends, with noticeable **peaks in late Q4** (Nov-Dec) and **around mid-year** — likely aligned with holiday shopping and summer events.
 - **Post-peak Declines**: A **sharp drop follows each peak season**, especially at the **start of the year** (Jan-Feb), indicating a slowdown in consumer activity.
+
 💡 **Recommendations**:
 - **Capitalize on Peak Seasons**:
     - Launch **major promotions, product launches**, and **marketing campaigns** in late Q4 and summer months.
@@ -76,3 +77,12 @@ The SQL queries used for exploratory data analysis are available at
   - Pair milk products with complementary goods such as cereals, cookies, or oats to encourage bundled purchases and lift average transaction values.
 
 ### 📱 Channel Analysis:
+
+<img width="477" height="662" alt="Feuille 16" src="https://github.com/user-attachments/assets/711e74fa-e4c0-4ec1-a9eb-44ec2dae8bed" />
+<img width="1331" height="647" alt="Online vs In-Store Transactions by Product Category" src="https://github.com/user-attachments/assets/651fd56c-c7c7-4c90-a401-674e21b2009a" />
+
+✒ **Observations**:
+- 
+
+💡**Recommendations**:
+- **Invest in High-performi
