@@ -138,7 +138,7 @@ The SQL queries used for exploratory data analysis are available at the followin
 - **Support Online Growth for Daily Essentials**:
   - Optimize logistics for fast, fresh delivery
   
-### 👩Customer Behavior Analysis
+### 👩 Customer Behavior Analysis
 
 <img width="1314" height="603" alt="Correlation between Customer Spending and Number of Transactions (2)" src="https://github.com/user-attachments/assets/a3112b5f-ed60-4f8d-ad94-8f42c262d27c" />
 
