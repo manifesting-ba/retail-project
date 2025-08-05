@@ -21,7 +21,7 @@ This project aims to **analyze sales trends, evaluate product category performan
 - Encourage **more frequent purchases** through loyalty programs, rewards, or personalized offers.
 
 ## 📁 Dataset Overview
-- **Source**: [Kaggle - Retail sales dataset](retail_store_sales.csv)
+- **Source**: [Kaggle - Retail sales dataset](https://www.kaggle.com/datasets/ahmedmohamed2003/retail-store-sales-dirty-for-data-cleaning)
 - **License**: CC BY-SA 4.0 License
 - **Time range**: January 2022 - January 2025
 - **Size**: 12,575 rows x 11 columns
