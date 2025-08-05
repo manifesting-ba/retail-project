@@ -46,7 +46,10 @@ Key steps included:
 - Missing value handling
 The total row count after cleaning is 11,971 rows
 ## 🔎 Exploratory data analysis
-The SQL queries used for exploratory data analysis are available at
+The SQL queries used for exploratory data analysis are available at the following files:
+- [EDA_main.sql](EDA_main.sql) - This file includes **only** the SQL queries that **directly support** the findings and visualizations presented in the final report.
+- This file contains the complete set of SQL queries executed during the EDA phase. It reflects the full analytical exploration undertaken to understand the dataset from multiple angles.
+
 ### ⌛ Time series analysis
 
 <img width="987" height="180" alt="Feuille 15" src="https://github.com/user-attachments/assets/7c5f8bcb-9289-41bd-8b73-c84b3875d24e" />
