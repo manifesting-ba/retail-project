@@ -27,7 +27,8 @@ GROUP BY SUBSTR(Transaction_date, 1, 7)
 ORDER BY SUM(Total_spent) DESC;
 
 -- 3. Product category analysis
--- Calculate sales, transactions, and avg spend of each category
+-- Identify high-value and high-volume categories
+-- Calculate sales, transactions, and avg spend of each category (high-value)
 SELECT Category, 
        SUM(Total_spent) AS Sales, 
        COUNT(DISTINCT Transaction_id) AS Transactions, 
@@ -35,7 +36,7 @@ SELECT Category,
 FROM retail_store_sales_cleaned_v1
 GROUP BY Category
 ORDER BY 2 DESC;
--- Calculate quantity sold of each category to identify high-volume categories
+-- Calculate quantity sold of each category to (high-volume)
 SELECT Category, 
        SUM(Quantity) AS Total_quantity,
        COUNT(DISTINCT Transaction_id) AS Transactions
@@ -61,7 +62,7 @@ GROUP BY Category, Location
 ORDER BY 1, 2;
 
 -- 5. Customer behavior analysis
--- Discover the correlation between the number of transactions and customer spending
+-- Calculate the number of transactions and customer spending per customer
 SELECT Customer_id, 
        COUNT(Transaction_id) AS Transactions, 
        SUM(Total_spent) AS Customer_spending
