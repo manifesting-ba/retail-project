@@ -74,7 +74,7 @@ ORDER BY 1;
 SELECT DISTINCT Discount_applied  -- contain missing information
 FROM retail_store_sales_cleaned_v1
 ORDER BY 1;
--- Columns need filling: item, price per unit, quantity, total spent, location(if possible), discount (if possible)
+-- Columns need filling: item, price per unit, quantity, total spent, discount (if possible)
 -- Change Transaction_date data type from text to date
 SELECT *
 FROM retail_store_sales_cleaned_v1;
@@ -128,4 +128,3 @@ FROM retail_store_sales_cleaned_v1;
 -- Review the cleaned table
 SELECT *
 FROM retail_store_sales_cleaned_v1;
-
