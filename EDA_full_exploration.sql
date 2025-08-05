@@ -20,7 +20,7 @@ GROUP BY SUBSTR(Transaction_date, 1, 4)
 ORDER BY 2 DESC;
 -- Calculate sales, transactions, quantity sold, avg spend per transaction by month
 SELECT SUBSTR(Transaction_date, 1, 7) AS Month, 
-	   SUM(Total_spent) AS Sales,
+       SUM(Total_spent) AS Sales,
        COUNT(DISTINCT Transaction_id) AS Transactions,
        SUM(Quantity) AS Quantity,
        ROUND(SUM(Total_spent)/COUNT(DISTINCT Transaction_id),2) AS Avg_spend_per_transaction
@@ -40,7 +40,7 @@ GROUP BY Category
 ORDER BY 4 DESC;
 -- Calculate quantity sold of each category (high-volume)
 SELECT Category, 
-	   SUM(Quantity) AS Total_quantity,
+       SUM(Quantity) AS Total_quantity,
        COUNT(DISTINCT Transaction_id) AS Transactions
 FROM retail_store_sales_cleaned_v1
 GROUP BY Category
@@ -110,7 +110,7 @@ SELECT Day_of_week, COUNT(Transaction_id) AS Transactions
 FROM day_of_week
 GROUP BY Day_of_week
 ORDER BY 2 DESC;
--- there's not much difference among days of week, indicating no association
+-- there's not much difference in the number of transactions among days of week, indicating no association
 -- Calculate number of transactions with and without discount 
 SELECT Discount_applied, COUNT(Discount_applied) AS Transactions
 FROM retail_store_sales_cleaned_v1
