@@ -2,7 +2,7 @@
 ## 🎯 Objective
 This project aims to **analyze sales trends, evaluate product category performance**, and **understand customer purchasing behavior**. The insights will **support** data-driven decisions in **marketing strategy** and **inventory management**.
 ## 📊 Executive Summary
-#### ✒ Key Observations:
+#### Key Observations:
 - **Seasonal Trends**: Peaks in **mid-year** and **Q4**; sharp **drops post-holiday** season.
 - **Category Performance**:
   - **Butchers**, **Electric Household Essentials**, and **Furniture** are **high performers** in all metrics.
@@ -13,8 +13,8 @@ This project aims to **analyze sales trends, evaluate product category performan
   - However, customers **slightly lean towards online** channels.
 - **Positive correlation** between number of transactions and customer spending.
 
-#### 💡 Recommendations Preview:
-- **Leverage seasonal peaks** with targeted promotions.
+#### Recommendations Preview:
+- **Leverage seasonal peaks** with promotions and marketing campaigns.
 - **Prioritize investment** in **top-performing** categories and products.
 - Consider **re-pricing** or **bundling low-performing** categories.
 - **Strengthen online strategy** for tech products and essentials and **enhance in-store experience** for furniture.
