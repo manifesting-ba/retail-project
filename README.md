@@ -35,7 +35,7 @@ This project aims to **analyze sales trends, evaluate product category performan
   - Data for January 2025 is incomplete and may distort trends or monthly comparisons. It should be excluded from time-based analysis unless specifically accounted for.
 - Synthetic Data:
   - The dataset is artificially generated for analysis purposes. While it mimics real-world structures and distributions, it may not fully reflect actual customer behavior, seasonality, or market dynamics.
-## 🔧 Tools used
+## 🔧 Tools Used
 - SQL for data cleaning and exploration
 - Tableau for visualization
 ## 🧹 Data Cleaning 
