@@ -11,19 +11,17 @@ SELECT MIN(Transaction_date), MAX(Transaction_date)
 FROM retail_store_sales_cleaned_v1;
 -- Calculate sales, transactions, quantity sold, avg spend per transaction by year 
 SELECT SUBSTR(Transaction_date, 1, 4) AS Year, 
-	   SUM(Total_spent) AS Sales, 
+       SUM(Total_spent) AS Sales, 
        COUNT(DISTINCT Transaction_id) AS Transactions, 
        SUM(Quantity) AS Quantity,
        ROUND(SUM(Total_spent)/COUNT(DISTINCT Transaction_id),1) AS Avg_spend_per_transaction
 FROM retail_store_sales_cleaned_v1
 GROUP BY SUBSTR(Transaction_date, 1, 4)
 ORDER BY 2 DESC;
--- Calculate sales, transactions, quantity sold, avg spend per transaction by month
+-- Calculate sales, transactions by month
 SELECT SUBSTR(Transaction_date, 1, 7) AS Month, 
-	   SUM(Total_spent) AS Sales,
-       COUNT(DISTINCT Transaction_id) AS Transactions,
-       SUM(Quantity) AS Quantity,
-       ROUND(SUM(Total_spent)/COUNT(DISTINCT Transaction_id),2) AS Avg_spend_per_transaction
+       SUM(Total_spent) AS Sales,
+       COUNT(DISTINCT Transaction_id) AS Transactions
 FROM retail_store_sales_cleaned_v1
 GROUP BY SUBSTR(Transaction_date, 1, 7)
 ORDER BY SUM(Total_spent) DESC;
@@ -36,23 +34,19 @@ SELECT Category,
        ROUND(SUM(Total_spent)/COUNT(DISTINCT Transaction_id),1) AS Avg_spend_per_transaction
 FROM retail_store_sales_cleaned_v1
 GROUP BY Category
-ORDER BY 4 DESC;
+ORDER BY 2 DESC;
 -- Calculate quantity sold of each category to identify high-volume categories
 SELECT Category, 
-	   SUM(Quantity) AS Total_quantity,
+       SUM(Quantity) AS Total_quantity,
        COUNT(DISTINCT Transaction_id) AS Transactions
 FROM retail_store_sales_cleaned_v1
 GROUP BY Category
 ORDER BY 2 DESC; 
--- Calculate sales, number of transactions, average spend, and quantity of each item
-SELECT Item, 
-	   SUM(Total_spent) AS Sales, 
-       COUNT(DISTINCT Transaction_id) AS Transactions, 
-       ROUND(SUM(Total_spent)/COUNT(DISTINCT Transaction_id),1) AS Avg_spend_per_transaction,
-       SUM(Quantity) AS Quantity
+-- Identify top 5 items by sales
+SELECT Item, SUM(Total_spent) AS Sales
 FROM retail_store_sales_cleaned_v1
 GROUP BY Item
-ORDER BY 2 DESC; -- focus on top 5 items
+ORDER BY 2 DESC;
 
 -- 4. Location analysis
 -- Calculate transaction counts of each location
