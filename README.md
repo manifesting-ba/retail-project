@@ -1,6 +1,6 @@
 # RETAIL SALES ANALYSIS PROJECT
 ## 🎯 Objective
-The objective of this project is to explore sales trends, assess product category performance, and understand customer purchasing behavior. The insights derived from this analysis aim to support data-driven decision-making for marketing strategies and inventory management.
+This project aims to **analyze sales trends, evaluate product category performance**, and **understand customer purchasing behavior**. The insights will **support** data-driven decisions in **marketing strategy** and **inventory management**.
 ## 📊 Executive Summary
 #### ✒ Key Observations:
 - **Seasonal Trends**: Peaks in **mid-year** and **Q4**; sharp **drops post-holiday** season.
@@ -9,15 +9,16 @@ The objective of this project is to explore sales trends, assess product categor
   - **Patisserie** underperforms.
   - **Milk Products** have high volume and transactions but lowest sales.
 - **Channel Preferences**:
-  - Online and offline usage is balanced overall, with category-specific variations.
-  - However, customers slightly lean towards online channels.
+  - Online and offline usage is **balanced overall**, with **category-specific variations**.
+  - However, customers **slightly lean towards online** channels.
 - **Positive correlation** between number of transactions and customer spending.
 
 #### 💡 Recommendations Preview:
 - **Leverage seasonal peaks** with targeted promotions.
 - **Prioritize investment** in **top-performing** categories and products.
 - Consider **re-pricing** or **bundling low-performing** categories.
-- Encourage **more frequent purchases** through loyalty programs, rewards, or personalized offers to increase revenue.
+- **Strengthen online strategy** for tech and essentials and **enhance in-store experience** for furniture.
+- Encourage **more frequent purchases** through loyalty programs, rewards, or personalized offers.
 
 ## 📁 Dataset Overview
 - **Source**: [Kaggle - Retail sales dataset](retail_store_sales.csv)
@@ -34,6 +35,9 @@ The objective of this project is to explore sales trends, assess product categor
   - Data for January 2025 is incomplete and may distort trends or monthly comparisons. It should be excluded from time-based analysis unless specifically accounted for.
 - Synthetic Data:
   - The dataset is artificially generated for analysis purposes. While it mimics real-world structures and distributions, it may not fully reflect actual customer behavior, seasonality, or market dynamics.
+## 🔧 Tools used
+- SQL for data cleaning and exploration
+- Tableau for visualization
 ## 🧹 Data cleaning 
 The data cleaning process was performed using SQL, and the full set of queries can be found in [data_cleaning.sql](data_cleaning.sql) . 
 Key steps included:
@@ -82,7 +86,7 @@ The SQL queries used for exploratory data analysis are available at
 - **Patisserie** underperforms across most key metrics (sales, transactions, quantity) despite medium average spend, indicating a need for **pricing or promotional review**.
 - **Milk Products** has relatively **high total quantity and transaction volume** but **lowest average spend** ($119.00), suggesting it's a **frequently purchased, low-margin staple**.
 
-💡**Recommendations**:
+💡 **Recommendations**:
 - **Invest in High-performing categories** (Butchers and Electric Essentials):
   - Focus promotions and advertising on these categories to maintain momentum and further boost sales.
   - Introduce premium product lines to serve evolving customer needs and capture greater value.
@@ -96,7 +100,7 @@ The SQL queries used for exploratory data analysis are available at
 
 <img width="1287" height="315" alt="Item Performance Breakdown_ High vs  Low Performers (1)" src="https://github.com/user-attachments/assets/b2dd917d-ace9-40de-a8b8-6b7da06233e1" />
 
-💡**Recommendations**:
+💡 **Recommendations**:
 - **Sustain promotion** of these products.
 - **Deep-Dive into Profitability**: While these items lead in sales, analyze their profit margins to ensure they also contribute to net profit—not just revenue.
 
@@ -109,13 +113,13 @@ The SQL queries used for exploratory data analysis are available at
 
  <img width="1263" height="669" alt="Online vs In-Store Transactions by Product Category (2)" src="https://github.com/user-attachments/assets/33dfce41-283e-485c-8313-58db73b01d21" />
 
-✒ **Observations**:
+
 - **Tech Categories Skew Heavily Online**: Computers & Electric Accessories and Electric Household Essentials show considerably higher transaction volumes online compared to in-store, indicating a **strong consumer preference for buying tech products digitally**. 
 - **Furniture Leads In-store Purchases**: This is likely due to customers preferring to see or test items physically.
 - **Balanced Channels for Food and Patisserie**: These categories show a relatively even split between online and offline, suggesting **flexibility** in customer buying behavior.
 - **Daily Essentials Lean Online**: Milk products, beverages, and butchers see slightly more tractions online.
 
-💡**Recommendations**:
+💡 **Recommendations**:
 - **Enhance Online Strategy for Tech Categories**:
   - Provide more detailed product content, fast delivery, and competitive pricing to optimize online shopping experience.
   - Reduce in-store inventory footprint for these categories to lower overhead.
@@ -130,12 +134,11 @@ The SQL queries used for exploratory data analysis are available at
   
 ### 👩Customer Behavior Analysis
 
-<img width="1314" height="603" alt="Correlation between Customer Spending and Number of Transactions" src="https://github.com/user-attachments/assets/c2cabbb3-bade-4331-9b55-82888c43c179" />
+<img width="1314" height="603" alt="Correlation between Customer Spending and Number of Transactions (2)" src="https://github.com/user-attachments/assets/a3112b5f-ed60-4f8d-ad94-8f42c262d27c" />
 
 ✒ **Observations**:
 - There is a clear **positive linear relationship** between the number of transactions and customer spending.
 - Most customers fall within a narrow transaction range (440–520 transactions), suggesting **consistent shopping behavior**.
 
-💡**Recommendations**:
+💡 **Recommendations**:
 - **Encouraging more purchases** (e.g., via loyalty programs, rewards, or tailored offers) can drive revenue growth.
-
