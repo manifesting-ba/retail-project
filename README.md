@@ -38,7 +38,7 @@ This project aims to **analyze sales trends, evaluate product category performan
 ## 🔧 Tools used
 - SQL for data cleaning and exploration
 - Tableau for visualization
-## 🧹 Data cleaning 
+## 🧹 Data Cleaning 
 The data cleaning process was performed using SQL, and the full set of queries can be found in [data_cleaning.sql](data_cleaning.sql) . 
 
 Key steps include:
@@ -47,12 +47,12 @@ Key steps include:
 - Missing value handling
 
 The total row count after cleaning is 11,971 rows
-## 🔎 Exploratory data analysis
+## 🔎 Exploratory Data Analysis
 The SQL queries used for exploratory data analysis are available at the following files:
 - [EDA_main.sql](EDA_main.sql) - This file includes **only** the SQL queries that **directly support** the findings and visualizations presented in the project.
 - [EDA_full_exploration.sql](EDA_full_exploration.sql) - This file contains the **complete** set of SQL queries executed during the EDA phase. It reflects the full analytical exploration undertaken to understand the dataset from multiple angles.
 
-### ⌛ Time series analysis
+### ⌛ Time Series Analysis
 
 <img width="987" height="180" alt="Feuille 15" src="https://github.com/user-attachments/assets/7c5f8bcb-9289-41bd-8b73-c84b3875d24e" />
 
