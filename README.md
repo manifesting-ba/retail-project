@@ -111,7 +111,7 @@ The SQL queries used for exploratory data analysis are available at the followin
 
 ### 📱 Location Analysis:
 
-<img width="494" height="662" alt="Feuille 16 (1)" src="https://github.com/user-attachments/assets/c33c233c-3e22-4d6f-bba0-b21e5015c9b6" />
+<img width="494" height="675" alt="Feuille 16" src="https://github.com/user-attachments/assets/acdf2949-7bc5-4c74-86c0-0935d257f4c2" />
 
 ✒ **Observations**:
 - **Relatively Balanced Distribution**: Transaction volumes are fairly balanced between online and in-store channels.
@@ -140,11 +140,11 @@ The SQL queries used for exploratory data analysis are available at the followin
   
 ### 👩 Customer Behavior Analysis
 
-<img width="1314" height="603" alt="Correlation between Customer Spending and Number of Transactions (2)" src="https://github.com/user-attachments/assets/a3112b5f-ed60-4f8d-ad94-8f42c262d27c" />
+<img width="1287" height="603" alt="Correlation between Customer Spending and Number of Transactions" src="https://github.com/user-attachments/assets/050fef42-a52b-465b-8a0d-286005e1b6c5" />
+
 
 ✒ **Observations**:
-- There is a clear **positive linear relationship** between the number of transactions and customer spending.
-- Most customers fall within a narrow transaction range (440–520 transactions), suggesting **consistent shopping behavior**.
-
+- There is a **moderately strong positive correlation** between the number of transactions and customer spending.
+- However, the relationship is not perfectly linear, indicating other factors (like average spend per transaction) also play a role.
 💡 **Recommendations**:
 - **Encouraging more purchases** (e.g., via loyalty programs, rewards, or tailored offers) can drive revenue growth.
