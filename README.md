@@ -54,7 +54,7 @@ The SQL queries used for exploratory data analysis are available at the followin
 
 ### ⌛ Time Series Analysis
 
-<img width="987" height="203" alt="Feuille 15 (1)" src="https://github.com/user-attachments/assets/3ba5330c-6c8a-486c-8104-c62364536419" />
+<img width="987" height="203" alt="Feuille 15 (2)" src="https://github.com/user-attachments/assets/f5dce520-5eb3-4e23-89b9-a96003024e48" />
 
 ✒ **Observations**:
 - **Sales Recovery**: After a slight dip in 2023, total sales bounced back in 2024, reaching $524,881, increasing by 6.8% from 2023 to 2024.
@@ -63,7 +63,7 @@ The SQL queries used for exploratory data analysis are available at the followin
 
 📍 **Insight**: The data reveals a slight dip in 2023 followed by a **clear rebound** in 2024. Sales, transactions, and quantity sold all increased, suggesting a **potential recovery phase** — possibly due to post-pandemic normalization or improved consumer demand. However, additional context is needed to confirm causality.
 
-<img width="1290" height="626" alt="Spending and Transaction Patterns over time (1)" src="https://github.com/user-attachments/assets/e584c19b-7085-44c8-9278-39090a5cfd30" />
+<img width="1290" height="626" alt="Spending and Transaction Patterns over time (3)" src="https://github.com/user-attachments/assets/dad5b580-c495-40aa-a3c8-84f844032b76" />
 
 ✒ **Observations**:
 - **Clear Seasonality**: Spending and transactions exhibit clear seasonal trends, with noticeable **peaks in late Q4** (Nov-Dec) and **around mid-year** — likely aligned with holiday shopping and summer events.
@@ -80,9 +80,8 @@ The SQL queries used for exploratory data analysis are available at the followin
 
 ### 🛒 Category Performance Analysis:
 
-<img width="1287" height="626" alt="Total spent by Product Category (1)" src="https://github.com/user-attachments/assets/977591fe-4654-47cb-871d-e8a0e3619ec0" />
-
-<img width="1287" height="626" alt="Total quantity by category" src="https://github.com/user-attachments/assets/a2a53463-c775-4156-bdba-8284cad924e4" />
+<img width="1287" height="626" alt="Total spent by Product Category" src="https://github.com/user-attachments/assets/aa1e3b96-ce8c-4f10-8d6c-b04af79e9ada" />
+<img width="1287" height="626" alt="Total quantity by category (1)" src="https://github.com/user-attachments/assets/2e0f9b9c-0f06-4c2a-b91a-5c8fc1de3bd8" />
 
 ✒ **Observations**:
 - **Butchers** and **Electric Household Essentials** stand out as **value-driven high performers**, excelling in **sales, transactions, and average spend**.
@@ -111,14 +110,13 @@ The SQL queries used for exploratory data analysis are available at the followin
 
 ### 📱 Location Analysis:
 
-<img width="494" height="675" alt="Feuille 16" src="https://github.com/user-attachments/assets/acdf2949-7bc5-4c74-86c0-0935d257f4c2" />
+<img width="494" height="698" alt="Feuille 16 (1)" src="https://github.com/user-attachments/assets/b44c9f50-2e7d-4151-9774-35a9d32e3825" />
 
 ✒ **Observations**:
 - **Relatively Balanced Distribution**: Transaction volumes are fairly balanced between online and in-store channels.
 - **A Slight Preference for Online Shopping**: Online transactions (6,068) modestly exceed in-store (5,903).
 
- <img width="1263" height="669" alt="Online vs In-Store Transactions by Product Category (2)" src="https://github.com/user-attachments/assets/33dfce41-283e-485c-8313-58db73b01d21" />
-
+<img width="1263" height="669" alt="Online vs In-Store Transactions by Product Category (2)" src="https://github.com/user-attachments/assets/1d073336-8ac3-4e01-97fb-f8ec40b3ab67" />
 
 - **Tech Categories Skew Heavily Online**: Computers & Electric Accessories and Electric Household Essentials show considerably higher transaction volumes online compared to in-store, indicating **consumer preference for buying tech products digitally**. 
 - **Furniture Leads In-store Purchases**: This is likely due to customers preferring to see or test items physically.
@@ -128,6 +126,10 @@ The SQL queries used for exploratory data analysis are available at the followin
 💡 **Recommendations**:
 - **Enhance Online Strategy for Tech Categories**:
   - Provide more detailed product content, fast delivery, and competitive pricing to optimize online shopping experience.
+  - Key products for online growth are Item_5_CEA, Item_13_EHE, Item_19_CEA, Item_20_CEA, and Item_20_EHE. These items receive higher online transactions, making them ideal for online promotions.
+  
+  <img width="1289" height="467" alt="Feuille 19 (1)" src="https://github.com/user-attachments/assets/8b50cdfb-c45a-421b-a13a-ede5cae1f335" />
+  
   - Reduce in-store inventory footprint for these categories to lower overheads.
 - **Improve In-Store Experience for Furniture**:
   - Invest in attractive store displays and trial zones
@@ -155,5 +157,5 @@ The SQL queries used for exploratory data analysis are available at the followin
     - CUST_01, CUST_09: Higher-than-average transactions (485 and 498 respectively) but lowest average spend per transaction, leading to lower total spending.
 
 💡 **Recommendations**:
-- **Develop loyalty programs, rewards, or persoanlized offers** to increase purchase freqeuncy for **high spenders with low transactions**. 
+- **Develop loyalty programs, rewards, or personalized offers** to increase purchase frequency for **high spenders with low transactions**. 
 - **Encourage upselling, cross-selling** & **offer premium products** to increase average transaction value for **low spenders with high transactions**.
