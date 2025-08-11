@@ -54,7 +54,7 @@ The SQL queries used for exploratory data analysis are available at the followin
 
 ### ⌛ Time Series Analysis
 
-<img width="987" height="180" alt="Feuille 15" src="https://github.com/user-attachments/assets/7c5f8bcb-9289-41bd-8b73-c84b3875d24e" />
+<img width="987" height="203" alt="Feuille 15 (1)" src="https://github.com/user-attachments/assets/3ba5330c-6c8a-486c-8104-c62364536419" />
 
 ✒ **Observations**:
 - **Sales Recovery**: After a slight dip in 2023, total sales bounced back in 2024, reaching $524,881, increasing by 6.8% from 2023 to 2024.
@@ -63,7 +63,7 @@ The SQL queries used for exploratory data analysis are available at the followin
 
 📍 **Insight**: The data reveals a slight dip in 2023 followed by a **clear rebound** in 2024. Sales, transactions, and quantity sold all increased, suggesting a **potential recovery phase** — possibly due to post-pandemic normalization or improved consumer demand. However, additional context is needed to confirm causality.
 
-<img width="1290" height="603" alt="Spending and Transaction Patterns over time (2)" src="https://github.com/user-attachments/assets/5566c9b7-7c75-4e1d-8f60-92a628c85590" />
+<img width="1290" height="626" alt="Spending and Transaction Patterns over time (1)" src="https://github.com/user-attachments/assets/e584c19b-7085-44c8-9278-39090a5cfd30" />
 
 ✒ **Observations**:
 - **Clear Seasonality**: Spending and transactions exhibit clear seasonal trends, with noticeable **peaks in late Q4** (Nov-Dec) and **around mid-year** — likely aligned with holiday shopping and summer events.
@@ -140,11 +140,20 @@ The SQL queries used for exploratory data analysis are available at the followin
   
 ### 👩 Customer Behavior Analysis
 
-<img width="1287" height="603" alt="Correlation between Customer Spending and Number of Transactions" src="https://github.com/user-attachments/assets/050fef42-a52b-465b-8a0d-286005e1b6c5" />
-
+<img width="1287" height="603" alt="Correlation between Customer Spending and Number of Transactions (1)" src="https://github.com/user-attachments/assets/3bc3a501-c53d-4e9c-b021-8a5459a18022" />
 
 ✒ **Observations**:
-- There is a **moderately strong positive correlation** between the number of transactions and customer spending.
-- However, the relationship is not perfectly linear, indicating other factors (like average spend per transaction) also play a role.
+- There is a **moderately strong positive correlation** between the number of transactions and customer spending. Customers with both high transaction counts and high average spend per transaction are top contributors to revenue.
+- However, the relationship is not perfectly linear since customers with similar transaction counts can have noticeably different spending levels, highlighting the role of other factors like average spend per transaction.
+
+<img width="1346" height="602" alt="Correlation between Customer Spending and Number of Transactions (2)" src="https://github.com/user-attachments/assets/30c503a8-5efb-4772-b850-cadc378e04fd" />
+
+- Notable customer groups:
+  - High spenders with low transactions: (CUST_03, CUST_04, CUST_19)
+    - CUST_03: Lowest number of transactions (446) but highest average spend per transaction ($136.35), resulting in relatively high total spending.
+  - Low spenders with high transactions: (CUST_01, CUST_09, CUST_15)
+    - CUST_01, CUST_09: Higher-than-average transactions (485 and 498 respectively) but lowest average spend per transaction, leading to lower total spending.
+
 💡 **Recommendations**:
-- **Encouraging more purchases** (e.g., via loyalty programs, rewards, or tailored offers) can drive revenue growth.
+- **Develop loyalty programs, rewards, or persoanlized offers** to increase purchase freqeuncy for **high spenders with low transactions**. 
+- **Encourage upselling, cross-selling** & **offer premium products** to increase average transaction value for **low spenders with high transactions**.
