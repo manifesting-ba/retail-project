@@ -101,12 +101,17 @@ The SQL queries used for exploratory data analysis are available at the followin
 - **Bundle Low-profit category** (Milk):
   - Pair milk products with complementary goods such as cereals, cookies, or oats to encourage bundled purchases and lift average transaction values.
 
-### ⌛ Product Analysis
+### 🛍 Product Analysis
 
 <img width="1287" height="315" alt="Item Performance Breakdown_ High vs  Low Performers (1)" src="https://github.com/user-attachments/assets/b2dd917d-ace9-40de-a8b8-6b7da06233e1" />
 
+✒ **Observations**:
+- Item 25_FUR, 25_EHE, 25_BUT, 24_FUR, 25_FOOD lead in sales, making them key focus areas for growth.
+
+<img width="1289" height="467" alt="Feuille 21 (1)" src="https://github.com/user-attachments/assets/18332c2a-bb63-4272-890e-1e2042c5bbba" />
+
 💡 **Recommendations**:
-- **Prioritize promotion** of these products.
+-  **Prioritize promotion** of these products.
 - **Deep-Dive into Profitability**: While these items lead in sales, analyze their profit margins to ensure they also contribute to net profit—not just revenue.
 
 <img width="1287" height="603" alt="Item Performance Overview (5) (3)" src="https://github.com/user-attachments/assets/7f461401-5394-494f-9553-5538d27b3679" />
@@ -118,6 +123,15 @@ The SQL queries used for exploratory data analysis are available at the followin
 - **Cross-Bundle High Performers with Volume Drivers**:
   - Combine High Performer products with frequently-purchased Volume Drivers to encourage upselling; thus, boosting average order value.
   - Suggested combinations: Item 2 (Sofa) & 25 (Accent Chair); Item 1 (Office Chair) & 8 (Study Table).
+  
+<img width="1287" height="603" alt="Item Performance Overview (7) (3)" src="https://github.com/user-attachments/assets/3fbffc87-7cb7-4c9a-b8b2-e118ecfe7c99" />
+
+💡 **Recommendations**:
+- **Pair Niche High-Value with Volume Driver Items**:
+  - Use high-demand milk products (Item 1, 3, 4) to cross-sell premium variants (Item 18, 20, 24), helping raise the average basket value without heavy discounting.
+- **Bundle Popular Volume Drivers with High-Value Items from Low/High Performers**:
+  - Combine high-frequency Volume Drivers (Item 1, 3) with Low or High Performers that have high average spend (Item 25, 21, or 17, 22, 23) to elevate total transaction value while leveraging existing customer traffic.
+
 
 ### 📱 Location Analysis:
 
