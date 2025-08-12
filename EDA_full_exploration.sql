@@ -75,6 +75,18 @@ SELECT Category, Location,
 FROM retail_store_sales_cleaned_v1
 GROUP BY Category, Location
 ORDER BY 1, 2;
+-- Tech products to prioritize for online optimization
+SELECT Item, Location, COUNT(Transaction_id) AS Transactions
+FROM retail_store_sales_cleaned_v1
+WHERE Category = "Electric household essentials" OR Category = "Computers and electric accessories"
+GROUP BY Item, Location
+ORDER BY 1,2;
+-- Identify furniture pieces with high in-store transactions
+SELECT Item, Location, COUNT(Transaction_id) AS Transactions
+FROM retail_store_sales_cleaned_v1
+WHERE Category = "Furniture" 
+GROUP BY Item, Location
+ORDER BY 1,2;
 
 -- 5. Customer behavior analysis
 -- Calculate the number of transactions and customer spending per customer
