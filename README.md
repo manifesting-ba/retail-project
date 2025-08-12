@@ -123,19 +123,25 @@ The SQL queries used for exploratory data analysis are available at the followin
 - **Balanced Channels for Food and Patisserie**: These categories show a relatively even split between online and offline, suggesting **flexibility** in customer buying behavior.
 - **Daily Essentials Lean Online**: Milk products, beverages, and butchers see slightly more tractions online.
 
+ <img width="1289" height="467" alt="Feuille 19 (1)" src="https://github.com/user-attachments/assets/8b50cdfb-c45a-421b-a13a-ede5cae1f335" />
+
+- **Items 5_CEA, 13_EHE, 19_CEA, 20_CEA, and 20_EHE** demonstrate a **strong online presence**, making them ideal candidates for further online-focused promotion and optimization.
+
+ <img width="1289" height="407" alt="Feuille 20" src="https://github.com/user-attachments/assets/f0f4a051-9c60-48ed-9c70-41852191b6bc" />
+
+- **Items 8, 15, 24, and 25 in Furniture** show consistently **higher in-store purchases** compared to online, indicating they are well-suited for enhanced showroom displays and in-store promotions.
+ 
 💡 **Recommendations**:
 - **Enhance Online Strategy for Tech Categories**:
-  - Provide more detailed product content, fast delivery, and competitive pricing to optimize online shopping experience.
-  - Key products for online growth are Item_5_CEA, Item_13_EHE, Item_19_CEA, Item_20_CEA, and Item_20_EHE. These items receive higher online transactions, making them ideal for online promotions.
-  
-  <img width="1289" height="467" alt="Feuille 19 (1)" src="https://github.com/user-attachments/assets/8b50cdfb-c45a-421b-a13a-ede5cae1f335" />
-  
+  - Focus on top-selling online tech products — Item_5_CEA, Item_13_EHE, Item_19_CEA, Item_20_CEA, and Item_20_EHE — by enriching product pages with detailed descriptions, images, and reviews.
+  - Offer fast delivery options and competitive pricing to capture and retain online customers for these priority items.
   - Reduce in-store inventory footprint for these categories to lower overheads.
 - **Improve In-Store Experience for Furniture**:
-  - Invest in attractive store displays and trial zones
-  - Provide in-store-only services (eg: personalized consultation)
+  - Prioritize high-performing in-store items — Item_8_FUR, Item_15_FUR, Item_24_FUR, and Item_25_FUR — for prominent showroom displays and engaging trial zones.
+  - Introduce exclusive in-store services, such as personalized consultations to strengthen customer engagement.
 - **Maintain Omnichannel Presence for Balanced Categories**:
-  - Ensure consistent pricing and promotions online and offline.
+  - Audit pricing weekly to ensure consistent prices online and offline.
+  - Align promotion schedules so discounts launch simultaneously across channels.
   - Offer flexible delivery, pickup options.
 - **Support Online Growth for Daily Essentials**:
   - Optimize logistics for fast, fresh delivery
