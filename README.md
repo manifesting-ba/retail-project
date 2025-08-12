@@ -95,18 +95,29 @@ The SQL queries used for exploratory data analysis are available at the followin
   - Focus promotions and advertising on these categories to maintain momentum and further boost sales.
   - Introduce premium product lines to serve evolving customer needs and capture greater value.
 - **Boost Volume-Driven Sales with Bundles and Bulk Incentives** (Furniture and Food):
-  - Offer bulk discounts or bundled deals to encourage larger purchases, improve inventory turnover, and drive profitability on frequently purchased items.
-  - Example: Bundle a sofa with a coffee table, or offer family meal deals including bulk food items.
+  - Offer bulk discounts or bundled deals to encourage larger purchases, improve inventory turnover, and drive profitability repeated purchases.
 - **Reassess Pricing & Promotions for Underperforming category** (Patisserie):
   - Consider new marketing campaigns, pricing adjustments, or bundling with related products to enhance competitiveness and performance.
 - **Bundle Low-profit category** (Milk):
   - Pair milk products with complementary goods such as cereals, cookies, or oats to encourage bundled purchases and lift average transaction values.
+
+### ⌛ Product Analysis
 
 <img width="1287" height="315" alt="Item Performance Breakdown_ High vs  Low Performers (1)" src="https://github.com/user-attachments/assets/b2dd917d-ace9-40de-a8b8-6b7da06233e1" />
 
 💡 **Recommendations**:
 - **Prioritize promotion** of these products.
 - **Deep-Dive into Profitability**: While these items lead in sales, analyze their profit margins to ensure they also contribute to net profit—not just revenue.
+
+<img width="1287" height="603" alt="Item Performance Overview (5) (3)" src="https://github.com/user-attachments/assets/7f461401-5394-494f-9553-5538d27b3679" />
+
+💡 **Recommendations**:
+- **Bundle Low Performers with High-Visibility Products**:
+  - Pair slow-moving items from the Low Performer quadrant with complementary products from High Performer or Volume Driver categories to increase visibility and sell-through, reducing deadstock risk.
+  - Suggested combinations: Item 2 (Sofa) & 3 (Coffee Table); Item 2 (Sofa) & 22 (Corner Shelf); Item 20 (Bean Bag) & 22 (Corner Shelf).
+- **Cross-Bundle High Performers with Volume Drivers**:
+  - Combine High Performer products with frequently-purchased Volume Drivers to encourage upselling; thus, boosting average order value.
+  - Suggested combinations: Item 2 (Sofa) & 25 (Accent Chair); Item 1 (Office Chair) & 8 (Study Table).
 
 ### 📱 Location Analysis:
 
@@ -165,3 +176,5 @@ The SQL queries used for exploratory data analysis are available at the followin
 💡 **Recommendations**:
 - **Develop loyalty programs, rewards, or personalized offers** to increase purchase frequency for **high spenders with low transactions**. 
 - **Encourage upselling, cross-selling** & **offer premium products** to increase average transaction value for **low spenders with high transactions**.
+
+
