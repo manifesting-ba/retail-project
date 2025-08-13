@@ -25,6 +25,13 @@ SELECT SUBSTR(Transaction_date, 1, 7) AS Month,
 FROM retail_store_sales_cleaned_v1
 GROUP BY SUBSTR(Transaction_date, 1, 7)
 ORDER BY SUM(Total_spent) DESC;
+-- Identify high-demand categories for promotion focus during peak periods 
+SELECT SUBSTR(Transaction_date, 6, 2) AS Month, 
+       Category, 
+       COUNT(Transaction_id) AS Transactions
+FROM retail_store_sales_cleaned_v1
+GROUP BY SUBSTR(Transaction_date, 6, 2), Category
+ORDER BY 1, 3 DESC;
 
 -- 3. Product category analysis
 -- Identify high-value and high-volume categories
