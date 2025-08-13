@@ -125,7 +125,7 @@ The SQL queries used for exploratory data analysis are available at the followin
 - **Deep-Dive into Profitability**:
   - While these items lead in sales, it's crucial that we analyze their profit margins to ensure they also contribute to net profit—not just revenue.
 
-<img width="1287" height="603" alt="Item Performance Overview (5) (3)" src="https://github.com/user-attachments/assets/7f461401-5394-494f-9553-5538d27b3679" />
+<img width="1287" height="626" alt="Item Performance Overview (5)" src="https://github.com/user-attachments/assets/a469030f-76a0-431e-ad75-6d2d36702e45" />
 
 💡 **Recommendations**:
 - **Bundle Low Performers with High-Visibility Products**:
@@ -135,7 +135,7 @@ The SQL queries used for exploratory data analysis are available at the followin
   - Combine High Performer products with frequently-purchased Volume Drivers to encourage upselling; thus, boosting average order value.
   - Suggested combinations: Item 2 (Sofa) & 25 (Accent Chair); Item 1 (Office Chair) & 8 (Study Table).
   
-<img width="1287" height="603" alt="Item Performance Overview (7) (3)" src="https://github.com/user-attachments/assets/3fbffc87-7cb7-4c9a-b8b2-e118ecfe7c99" />
+<img width="1287" height="626" alt="Item Performance Overview (7) (1)" src="https://github.com/user-attachments/assets/1f52dddf-7433-4c22-bc12-041343cee53d" />
 
 💡 **Recommendations**:
 - **Pair Niche High-Value with Volume Driver Items**:
@@ -162,7 +162,7 @@ The SQL queries used for exploratory data analysis are available at the followin
 
 - **Items 5_CEA, 13_EHE, 19_CEA, 20_CEA, and 20_EHE** demonstrate a **strong online presence**, making them ideal candidates for further online-focused promotion and optimization.
 
- <img width="1289" height="407" alt="Feuille 20" src="https://github.com/user-attachments/assets/f0f4a051-9c60-48ed-9c70-41852191b6bc" />
+<img width="1289" height="407" alt="Feuille 20" src="https://github.com/user-attachments/assets/7e3f7059-099e-48b9-a2ff-7e3eca83a2c3" />
 
 - **Items 8, 15, 24, and 25 in Furniture** show consistently **higher in-store purchases** compared to online, indicating they are well-suited for enhanced showroom displays and in-store promotions.
  
@@ -183,22 +183,32 @@ The SQL queries used for exploratory data analysis are available at the followin
   
 ### 👩 Customer Behavior Analysis
 
-<img width="1287" height="603" alt="Correlation between Customer Spending and Number of Transactions (1)" src="https://github.com/user-attachments/assets/3bc3a501-c53d-4e9c-b021-8a5459a18022" />
+<img width="1287" height="626" alt="Correlation between Customer Spending and Number of Transactions" src="https://github.com/user-attachments/assets/89386006-04af-4a25-b792-808381705e68" />
 
 ✒ **Observations**:
 - There is a **moderately strong positive correlation** between the number of transactions and customer spending. Customers with both high transaction counts and high average spend per transaction are top contributors to revenue.
 - However, the relationship is not perfectly linear since customers with similar transaction counts can have noticeably different spending levels, highlighting the role of other factors like average spend per transaction.
 
-<img width="1346" height="602" alt="Correlation between Customer Spending and Number of Transactions (2)" src="https://github.com/user-attachments/assets/30c503a8-5efb-4772-b850-cadc378e04fd" />
+<img width="1335" height="644" alt="Correlation between Customer Spending and Number of Transactions (2)" src="https://github.com/user-attachments/assets/20f9454c-d5fa-4a64-aca8-f125b6cf796b" />
 
 - Key Opportunity Segments:
-  - High spenders with low transactions: (CUST_02, CUST_04, CUST_21)
-    - CUST_03: Lowest number of transactions (446) but highest average spend per transaction ($136.35), resulting in relatively high total spending.
-  - Low spenders with high transactions: (CUST_01, CUST_09, CUST_15)
-    - CUST_01, CUST_09: Higher-than-average transactions (485 and 498 respectively) but lowest average spend per transaction, leading to lower total spending.
+  - High-Value Customers: (CUST_02, CUST_04, CUST_21, CUST_22, CUST_03, CUST_19)
+    - CUST_02, CUST_04, CUST_21, CUST_22 (Orange group): These customers have high average spend per transaction, indicating their willingness to pay, but they don't buy frequently.
+    - The same goes for CUST_03 and CUST_19 (Red group): Their averages spend per transaction rank among the highest; however, their total spend is low. This is simply because they don’t buy often enough.
+  - Frequent Buyers: (CUST_01, CUST_09, CUST_11)
+    - CUST_01, CUST_09: Higher-than-median transactions (485 and 498 respectively) but lowest averages spend per transaction, leading to lower total spending.
+    - CUST_11: CUST_11 makes a similar number of transactions as peers (481) but generates $61K total spend — below CUST_10 ($63K) and CUST_23 ($65K) — due to a lower average spend per transaction ($126.26 compared to $131.30 and $134.11).
 
 💡 **Recommendations**:
-- **Develop loyalty programs, rewards, or personalized offers** to increase purchase frequency for **high spenders with low transactions**. 
-- **Encourage upselling, cross-selling** & **offer premium products** to increase average transaction value for **low spenders with high transactions**.
+- **Increase Purchase Frequency for High-Value Customers**: (CUST_02, CUST_04, CUST_21, CUST_22, CUST_03, CUST_19)
+  - Offer personalized product recommendations based on past purchases to spark interest.
+  - Give bonus points or perks for making a certain number of purchases within a set time frame.
+  - Offer flash sales or weekly deals to encourage more visits.
+  - Send targeted promos tied to holiday seasons or personal occasions (birthdays, anniversaries).
+- **Increase Average Spend per Transaction for Frequent Buyers**: (CUST_01, CUST_09, CUST_11)
+  - Train staff (offline) and optimize website prompts (online) to suggest higher-value or complementary items.
+  - Offer “spend more, earn more” rewards — e.g., extra loyalty points or cashback for purchases above a set spend threshold.
+  - Provide free shipping, gifts, or premium samples only for orders above a certain value.
+  - Send personalized offers featuring premium items they haven’t purchased yet.
 
 
