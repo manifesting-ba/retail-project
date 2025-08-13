@@ -63,19 +63,25 @@ The SQL queries used for exploratory data analysis are available at the followin
 
 📍 **Insight**: The data reveals a slight dip in 2023 followed by a **clear rebound** in 2024. Sales, transactions, and quantity sold all increased, suggesting a **potential recovery phase** — possibly due to post-pandemic normalization or improved consumer demand. However, additional context is needed to confirm causality.
 
-<img width="1290" height="626" alt="Spending and Transaction Patterns over time (3)" src="https://github.com/user-attachments/assets/dad5b580-c495-40aa-a3c8-84f844032b76" />
+<img width="1290" height="618" alt="Spending and Transaction Patterns over time" src="https://github.com/user-attachments/assets/320dfaaa-ba0d-4cb9-8d81-1de3676e0819" />
 
 ✒ **Observations**:
-- **Clear Seasonality**: Spending and transactions exhibit clear seasonal trends, with noticeable **peaks in late Q4** (Nov-Dec) and **around mid-year** — likely aligned with holiday shopping and summer events.
-- **Post-peak Declines**: A **sharp drop follows each peak season**, especially at the **start of the year** (Jan-Feb), indicating a slowdown in consumer activity.
+- **Clear Seasonality**: Spending and transactions exhibit clear seasonal trends, with noticeable **peaks in holiday period** (Nov-Jan) and **around mid-year** (May-July) — likely aligned with holiday shopping and summer events.
+- **Post-peak Declines**: A **sharp drop follows each peak season**, especially at the **start of the year** (Feb), indicating a slowdown in consumer activity.
+
+<img width="1371" height="618" alt="Feuille 22 (2)" src="https://github.com/user-attachments/assets/3d42183e-1b40-4fa1-a3d3-8b5e588f77bf" />
+<img width="1371" height="618" alt="Feuille 22" src="https://github.com/user-attachments/assets/a85bc098-0982-4ade-9ec7-5de5cc78e328" />
+
+- Transaction data shows that **Milk Products** and **Computers and Electric Accessories** lead in purchase frequency during the **holiday period**, suggesting **strong demand** patterns.
+- **Beverages** records a significantly higher transaction volume during **mid-year**, with **Butchers** following behind, indicating **strong customer demand**.
 
 💡 **Recommendations**:
 - **Capitalize on Peak Seasons**:
-    - Launch **major promotions, product launches**, and **marketing campaigns** in late Q4 and summer months.
+    - Concentrate **major promotions, product launches**, and **marketing campaigns** on **Beverages** and **Butchers** during the **mid-year** period (May–July) and on **Milk Products** & **Computers and Electric Accessories** during **holiday season** (November–January).
     - **Scale up inventory** ahead of seasonal peaks to meet demand.
     - **Increase staffing, bolster customer support**, and scale up **logistics operations** during high-demand periods to maintain service quality.
 - **Counteract Post-Holiday Declines**:
-    - Deploy **loyalty perks** or **"new year" sales** in January–February to sustain revenue.
+    - Deploy **loyalty perks** or **"new year" sales** in Jan-Mar to sustain revenue.
     - **Adjust supply levels** in off-seasons to minimize holding costs and unsold stock.
 
 ### 🛒 Category Performance Analysis:
@@ -191,12 +197,12 @@ The SQL queries used for exploratory data analysis are available at the followin
 
 <img width="1335" height="644" alt="Correlation between Customer Spending and Number of Transactions (2)" src="https://github.com/user-attachments/assets/20f9454c-d5fa-4a64-aca8-f125b6cf796b" />
 
-- Key Opportunity Segments:
+- **Key Opportunity Segments**:
   - High-Value Customers: (CUST_02, CUST_04, CUST_21, CUST_22, CUST_03, CUST_19)
-    - CUST_02, CUST_04, CUST_21, CUST_22 (Orange group): These customers have high average spend per transaction, indicating their willingness to pay, but they don't buy frequently.
+    - CUST_02, CUST_04, CUST_21, CUST_22 (Orange group): These customers have high average spend per transaction, indicating their **willingness to pay**, but they **don't buy frequently**.
     - The same goes for CUST_03 and CUST_19 (Red group): Their averages spend per transaction rank among the highest; however, their total spend is low. This is simply because they don’t buy often enough.
   - Frequent Buyers: (CUST_01, CUST_09, CUST_11)
-    - CUST_01, CUST_09: Higher-than-median transactions (485 and 498 respectively) but lowest averages spend per transaction, leading to lower total spending.
+    - CUST_01, CUST_09: **Higher-than-median transactions** (485 and 498 respectively) but **lowest averages spend per transaction**, leading to lower total spending.
     - CUST_11: CUST_11 makes a similar number of transactions as peers (481) but generates $61K total spend — below CUST_10 ($63K) and CUST_23 ($65K) — due to a lower average spend per transaction ($126.26 compared to $131.30 and $134.11).
 
 💡 **Recommendations**:
@@ -210,5 +216,3 @@ The SQL queries used for exploratory data analysis are available at the followin
   - Offer “spend more, earn more” rewards — e.g., extra loyalty points or cashback for purchases above a set spend threshold.
   - Provide free shipping, gifts, or premium samples only for orders above a certain value.
   - Send personalized offers featuring premium items they haven’t purchased yet.
-
-
