@@ -101,18 +101,29 @@ The SQL queries used for exploratory data analysis are available at the followin
 - **Bundle Low-profit category** (Milk):
   - Pair milk products with complementary goods such as cereals, cookies, or oats to encourage bundled purchases and lift average transaction values.
 
+❕ Detailed bundle recommendations and promotions will be presented in the Product Analysis section.
+
 ### 🛍 Product Analysis
 
 <img width="1287" height="315" alt="Item Performance Breakdown_ High vs  Low Performers (1)" src="https://github.com/user-attachments/assets/b2dd917d-ace9-40de-a8b8-6b7da06233e1" />
 
 ✒ **Observations**:
-- Item 25_FUR, 25_EHE, 25_BUT, 24_FUR, 25_FOOD lead in sales, making them key focus areas for growth.
+- With top sales performance, Item 25_FUR, 25_EHE, 25_BUT, 24_FUR, and 25_FOOD should be prioritized for targeted **marketing and promotional efforts to maximize growth**.
 
 <img width="1289" height="467" alt="Feuille 21 (1)" src="https://github.com/user-attachments/assets/18332c2a-bb63-4272-890e-1e2042c5bbba" />
 
 💡 **Recommendations**:
--  **Prioritize promotion** of these products.
-- **Deep-Dive into Profitability**: While these items lead in sales, analyze their profit margins to ensure they also contribute to net profit—not just revenue.
+-  **Strengthen & Leverage Offline Presence for In-store Leaders** (Item 24_FUR, 25_FUR, 25_EHE):
+   - Upgrade showroom displays for Furniture products.
+   - Create an interactive demo zone for Item_25_EHE — let customers test the appliance before buying.
+   - Place these items near checkout or in high-traffic areas.
+   - Train staff to provide product expertise and cross-selling suggestions.
+- **Online Campaigns for Online-Favored Products** (Item 25_BUT, 25_FOOD):
+  - Increase paid ads and social media promotions for these items.
+  - Offer “online-only” perks such as free delivery, extra loyalty points, or flash sales.
+  - Feature these products prominently on the homepage and in email campaigns.
+- **Deep-Dive into Profitability**:
+  - While these items lead in sales, it's crucial that we analyze their profit margins to ensure they also contribute to net profit—not just revenue.
 
 <img width="1287" height="603" alt="Item Performance Overview (5) (3)" src="https://github.com/user-attachments/assets/7f461401-5394-494f-9553-5538d27b3679" />
 
@@ -131,7 +142,6 @@ The SQL queries used for exploratory data analysis are available at the followin
   - Use high-demand milk products (Item 1, 3, 4) to cross-sell premium variants (Item 18, 20, 24), helping raise the average basket value without heavy discounting.
 - **Bundle Popular Volume Drivers with High-Value Items from Low/High Performers**:
   - Combine high-frequency Volume Drivers (Item 1, 3) with Low or High Performers that have high average spend (Item 25, 21, or 17, 22, 23) to elevate total transaction value while leveraging existing customer traffic.
-
 
 ### 📱 Location Analysis:
 
@@ -181,8 +191,8 @@ The SQL queries used for exploratory data analysis are available at the followin
 
 <img width="1346" height="602" alt="Correlation between Customer Spending and Number of Transactions (2)" src="https://github.com/user-attachments/assets/30c503a8-5efb-4772-b850-cadc378e04fd" />
 
-- Notable customer groups:
-  - High spenders with low transactions: (CUST_03, CUST_04, CUST_19)
+- Key Opportunity Segments:
+  - High spenders with low transactions: (CUST_02, CUST_04, CUST_21)
     - CUST_03: Lowest number of transactions (446) but highest average spend per transaction ($136.35), resulting in relatively high total spending.
   - Low spenders with high transactions: (CUST_01, CUST_09, CUST_15)
     - CUST_01, CUST_09: Higher-than-average transactions (485 and 498 respectively) but lowest average spend per transaction, leading to lower total spending.
