@@ -35,15 +35,14 @@ ORDER BY 1, 3 DESC;
 
 -- 3. Product category analysis
 -- Identify high-value and high-volume categories
--- Calculate sales, transactions, and avg spend of each category (high-value)
+-- Calculate sales and avg spend of each category (high-value)
 SELECT Category, 
        SUM(Total_spent) AS Sales, 
-       COUNT(DISTINCT Transaction_id) AS Transactions, 
        ROUND(SUM(Total_spent)/COUNT(DISTINCT Transaction_id),1) AS Avg_spend_per_transaction
 FROM retail_store_sales_cleaned_v1
 GROUP BY Category
-ORDER BY 4 DESC;
--- Calculate quantity sold of each category (high-volume)
+ORDER BY 2 DESC;
+-- Calculate quantity sold and transactions of each category (high-volume)
 SELECT Category, 
        SUM(Quantity) AS Total_quantity,
        COUNT(DISTINCT Transaction_id) AS Transactions
@@ -69,7 +68,24 @@ FROM retail_store_sales_cleaned_v1
 GROUP BY SUBSTR(Transaction_date, 1, 7), Category
 ORDER BY 1, 2;
 
--- 4. Location analysis
+-- 4. Product analysis
+-- Identify top 5 items by sales
+SELECT Item, SUM(Total_spent) AS Sales
+FROM retail_store_sales_cleaned_v1
+GROUP BY Item
+ORDER BY 2 DESC;
+-- Inspect performance of these items online and offline
+SELECT Item, 
+       Location, 
+       COUNT(Transaction_id) AS Transactions, 
+       SUM(Quantity) AS Quantity, 
+       SUM(Total_spent) AS Sales
+FROM retail_store_sales_cleaned_v1
+WHERE Item = "Item_25_FUR" OR Item = "Item_25_EHE" OR Item = "Item_25_BUT" OR Item = "Item_24_FUR" OR Item = "Item_25_FOOD"
+GROUP BY Item, Location
+ORDER BY 1;
+
+-- 5. Location analysis
 -- Calculate transaction counts of each location
 SELECT Location, COUNT(DISTINCT Transaction_id) AS Transactions
 FROM retail_store_sales_cleaned_v1
@@ -93,7 +109,7 @@ WHERE Category = "Furniture"
 GROUP BY Item, Location
 ORDER BY 1,2;
 
--- 5. Customer behavior analysis
+-- 6. Customer behavior analysis
 -- Calculate the number of transactions and customer spending per customer
 SELECT Customer_id, 
        COUNT(Transaction_id) AS Transactions, 
