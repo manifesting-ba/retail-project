@@ -70,7 +70,7 @@ The SQL queries used for exploratory data analysis are available at the followin
 - **Post-peak Declines**: A **sharp drop follows each peak season**, especially at the **start of the year** (Feb), indicating a slowdown in consumer activity.
 
 <img width="1371" height="618" alt="Feuille 22 (2)" src="https://github.com/user-attachments/assets/3d42183e-1b40-4fa1-a3d3-8b5e588f77bf" />
-<img width="1371" height="618" alt="Feuille 22" src="https://github.com/user-attachments/assets/a85bc098-0982-4ade-9ec7-5de5cc78e328" />
+<img width="1371" height="618" alt="Feuille 22 (1)" src="https://github.com/user-attachments/assets/7277e159-c777-4e04-a61f-67edc6fdfac9" />
 
 - Transaction data shows that **Milk Products** and **Computers and Electric Accessories** lead in purchase frequency during the **holiday period**, suggesting **strong demand** patterns.
 - **Beverages** records a significantly higher transaction volume during **mid-year**, with **Butchers** following behind, indicating **strong customer demand**.
@@ -86,14 +86,13 @@ The SQL queries used for exploratory data analysis are available at the followin
 
 ### 🛒 Category Performance Analysis:
 
-<img width="1287" height="626" alt="Total spent by Product Category" src="https://github.com/user-attachments/assets/aa1e3b96-ce8c-4f10-8d6c-b04af79e9ada" />
-<img width="1287" height="626" alt="Total quantity by category (1)" src="https://github.com/user-attachments/assets/2e0f9b9c-0f06-4c2a-b91a-5c8fc1de3bd8" />
+<img width="1293" height="626" alt="Total spent by Product Category (2)" src="https://github.com/user-attachments/assets/50e3bbbf-8af7-4bfc-b419-0bd8a9b0a613" />
+<img width="1293" height="626" alt="Total quantity by category (1)" src="https://github.com/user-attachments/assets/3e21fc57-e156-4fea-9819-17a9f72a42e1" />
 
 ✒ **Observations**:
-- **Butchers** and **Electric Household Essentials** stand out as **value-driven high performers**, excelling in **sales, transactions, and average spend**.
-- **Furniture** exhibits solid sales with highest transactions, quantity sold and moderate average spend, suggesting it is a **volume-driven** category.
-- **Food** and **Beverages** also show **high total quantities** and solid sales, suggesting they are **staple categories with decent performance**.
-- **Patisserie** underperforms across most key metrics (sales, transactions, quantity) despite medium average spend, indicating a need for **pricing or promotional review**.
+- **Butchers** and **Electric Household Essentials** stand out as **value-driven high performers**, excelling in **sales and average spend**.
+- **Furniture** and **Food** exhibit solid sales with highest quantity sold, transactions and moderate average spend, suggesting they are **volume-driven** categories. 
+- **Patisserie** records the lowest transactions and quantity sold despite a moderate average spend, resulting in low total sales. To rectify the situation, first boost its purchase frequency and units sold.
 - **Milk Products** has relatively **high total quantity and transaction volume** but **lowest average spend** ($119.00), suggesting it's a **frequently purchased, low-margin staple**.
 
 💡 **Recommendations**:
@@ -102,7 +101,10 @@ The SQL queries used for exploratory data analysis are available at the followin
   - Introduce premium product lines to serve evolving customer needs and capture greater value.
 - **Boost Volume-Driven Sales with Bundles and Bulk Incentives** (Furniture and Food):
   - Offer bulk discounts or bundled deals to encourage larger purchases, improve inventory turnover, and drive profitability repeated purchases.
-- **Reassess Pricing & Promotions for Underperforming category** (Patisserie):
+- **Boost Quantity Sold and Purchase Frequency for Underperforming category** (Patisserie):
+  - Provide free samples to raise awareness and encourage trial.
+  - Showcase patisserie in prominent, high-traffic store locations.
+  - Offer double loyalty points on patisserie purchases for a limited time.
   - Consider new marketing campaigns, pricing adjustments, or bundling with related products to enhance competitiveness and performance.
 - **Bundle Low-profit category** (Milk):
   - Pair milk products with complementary goods such as cereals, cookies, or oats to encourage bundled purchases and lift average transaction values.
@@ -166,7 +168,7 @@ The SQL queries used for exploratory data analysis are available at the followin
 
  <img width="1289" height="467" alt="Feuille 19 (1)" src="https://github.com/user-attachments/assets/8b50cdfb-c45a-421b-a13a-ede5cae1f335" />
 
-- **Items 5_CEA, 13_EHE, 19_CEA, 20_CEA, and 20_EHE** demonstrate a **strong online presence**, making them ideal candidates for further online-focused promotion and optimization.
+- **Items 5_CEA, 13_EHE, 19_CEA, 20_CEA, and 20_EHE** demonstrate a **strong online presence**, making them ideal candidates for further online-focused promotion.
 
 <img width="1289" height="407" alt="Feuille 20" src="https://github.com/user-attachments/assets/7e3f7059-099e-48b9-a2ff-7e3eca83a2c3" />
 
@@ -180,7 +182,7 @@ The SQL queries used for exploratory data analysis are available at the followin
 - **Improve In-Store Experience for Furniture**:
   - Prioritize high-performing in-store items — Item_8_FUR, Item_15_FUR, Item_24_FUR, and Item_25_FUR — for prominent showroom displays and engaging trial zones.
   - Introduce exclusive in-store services, such as personalized consultations to strengthen customer engagement.
-- **Maintain Omnichannel Presence for Balanced Categories**:
+- **Maintain Omnichannel Presence for Food and Patisserie**: 
   - Audit pricing weekly to ensure consistent prices online and offline.
   - Align promotion schedules so discounts launch simultaneously across channels.
   - Offer flexible delivery, pickup options.
@@ -213,6 +215,6 @@ The SQL queries used for exploratory data analysis are available at the followin
   - Send targeted promos tied to holiday seasons or personal occasions (birthdays, anniversaries).
 - **Increase Average Spend per Transaction for Frequent Buyers**: (CUST_01, CUST_09, CUST_11)
   - Train staff (offline) and optimize website prompts (online) to suggest higher-value or complementary items.
-  - Offer “spend more, earn more” rewards — e.g., extra loyalty points or cashback for purchases above a set spend threshold.
+  - Offer “spend more, earn more” rewards — e.g. extra loyalty points or cashback for purchases above a set spend threshold.
   - Provide free shipping, gifts, or premium samples only for orders above a certain value.
   - Send personalized offers featuring premium items they haven’t purchased yet.
