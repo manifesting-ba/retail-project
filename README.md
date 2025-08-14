@@ -3,22 +3,27 @@
 This project aims to **analyze sales trends, evaluate product category performance**, and **understand customer purchasing behavior**. The insights will **support** data-driven decisions in **marketing strategy** and **inventory management**.
 ## 📊 Executive Summary
 #### Key Observations:
-- **Seasonal Trends**: Peaks in **mid-year** and **Q4**; sharp **drops post-holiday** season.
+- **Seasonal Trends**: Peaks in **mid-year** and **holiday period**; sharp **drops post-holiday** season.
 - **Category Performance**:
-  - **Butchers**, **Electric Household Essentials**, and **Furniture** are **high performers** in all metrics.
+  - **Butchers** and **Electric Household Essentials** are the top **revenue-generating** categories, while **Furniture** and **Food lead in demand**, recording the highest quantity sold and purchase frequency.
   - **Patisserie** underperforms.
   - **Milk Products** have high volume and transactions but lowest sales.
 - **Channel Preferences**:
   - Online and offline usage is **balanced overall**, with **category-specific variations**.
   - However, customers **slightly lean towards online** channels.
-- **Positive correlation** between number of transactions and customer spending.
+- Customer spending **correlates strongly** with number of transactions and average spend per transaction.
 
 #### Recommendations Preview:
-- **Leverage seasonal peaks** with promotions and marketing campaigns.
-- **Prioritize investment** in **top-performing** categories and products.
-- Consider **re-pricing** or **bundling low-performing** categories.
-- **Strengthen online strategy** for tech products and essentials and **enhance in-store experience** for furniture.
-- Encourage **more frequent purchases** through loyalty programs, rewards, or personalized offers.
+- **Leverage seasonal peaks**: Focus promotions, product launches, and inventory on **Beverages and Butchers** during the **mid-year** period (May–July) and on **Milk Products & Computers and Electric Accessories** during **holiday season** (November–January).
+- **Mitigate post-holiday dips** via **loyalty perks** or **"new year" sales** between January and March.
+- **Strengthen top categories**: Boost marketing and introduce premium lines for Butchers and Electric Essentials.
+- **Boost quantity sold** and **purchase frequency** for **Patisserie** using samples, prime placement, bundling, and new marketing strategies.
+- **Maximize category potential**: Use **bulk discounts** and **bundles** to boost sales in high-demand categories (**Furniture, Food**) and lift average spend for **Milk**.
+- **Optimize channel strengths**:
+  - Provide detailed descriptions, images, and reviews for **top-selling online tech products**.
+  - Enhance in-store **furniture** displays with interactive and exclusive experiences.
+  - Streamline logistics to support online growth for all categories.
+- **Increase purchase frequency** for **high-value** customers and **average spend for frequent buyers** through rewards, tailored offers and events.
 
 ## 📁 Dataset Overview
 - **Source**: [Kaggle - Retail sales dataset](https://www.kaggle.com/datasets/ahmedmohamed2003/retail-store-sales-dirty-for-data-cleaning)
